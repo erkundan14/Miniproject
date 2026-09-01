@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+  <main class="mainBody">
+    <form>
+      <input type="text" placeholder="Enter city name">
+    </form>
+
+    <div class="weatherContainer">
+
+      <!-- Left Section -->+
+      <section>
+        <div class="countryCode"></div>
+
+        <div class="cityname">
+          <h1 class="citynamemain"></h1>
+          <img src="./assets/10200351.png" alt="Weather Icon" width="200px">
+        </div>
+
+        <!-- Temperature Section -->
+        <article class="temp">
+          <aside class="mainTemp">18<sup>°</sup>C</aside>
+          <div>
+            <p class="tempMin">min : 10<sup>°</sup>C</p>
+            <p class="tempMax">max : 25<sup>°</sup>C</p>
+          </div>
+        </article>
+
+        <!-- Wind Section -->
+        <section class="wind">
+          <aside>
+            <img src="./assets/10200707.png" alt="Wind Icon" width="200px">
+          </aside>
+          <aside>
+            <p class="windSpeed">wind speed : 5 km/hr</p>
+            <p class="degree">degree : 26 deg</p>
+            <p class="gust">gust : —</p>
+          </aside>
+        </section>
+
+      </section>
+
+      <!-- Right Section -->
+      <section>
+
+        <!-- Sunrise / Sunset -->
+        <article class="sun">
+          <aside>
+            <p class="sunrise">sunrise : 6:00 am</p>
+            <p class="sunset">sunset : 5:00 pm</p>
+          </aside>
+          <aside>
+            <img src="./assets/5ed6ca9b-69dd-45fb-8a97-6ff4e145f84b-Photoroom.png-Photoroom.png" alt="Sun Icon" width="200px">
+          </aside>
+        </article>
+
+        <!-- Pressure, Humidity, Sea Level -->
+        <article class="other">
+          <aside>
+            <img src="./assets/10200616.png" alt="Other Info Icon" width="200px">
+          </aside>
+          <aside>
+            <p class="pressure">pressure :</p>
+            <p class="humidity">humidity :</p>
+            <p class="seaLevel">sea-level :</p>
+          </aside>
+        </article>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="./weather.js"></script>
+</body>
+
+</html>
